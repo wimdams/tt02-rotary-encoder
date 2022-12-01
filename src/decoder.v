@@ -1,4 +1,4 @@
-
+`default_nettype none
 /*
       -- 1 --
      |       |
@@ -29,6 +29,19 @@ module seg7 (
             7:  segments = 7'b0000111;
             8:  segments = 7'b1111111;
             9:  segments = 7'b1100111;
+
+//            //only for simulation
+//            0:  segments = 7'b0000000;
+//            1:  segments = 7'b0000001;
+//            2:  segments = 7'b0000010;
+//            3:  segments = 7'b0000011;
+//            4:  segments = 7'b0000100;
+//            5:  segments = 7'b0000101;
+//            6:  segments = 7'b0000110;
+//            7:  segments = 7'b0000111;
+//            8:  segments = 7'b0001000;
+//            9:  segments = 7'b0001001;
+
             default:    
                 segments = 7'b0000000;
         endcase
