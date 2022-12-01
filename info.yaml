@@ -15,7 +15,7 @@ project:
 # This info will be automatically collected and used to make a datasheet for the chip.
 documentation: 
   author:       "Wim Dams"      # Your name
-  discord:      "/"      # Your discord handle
+  discord:      "wda#2504"      # Your discord handle
   title:        "Rotary encoder"      # Project title
   description:  "Reads in a (incremental) rotary encoder and shows the result on the seven-segment display"      # Short description of what your project does
   how_it_works: "The rotary pins are sampled every clock cycle. 
