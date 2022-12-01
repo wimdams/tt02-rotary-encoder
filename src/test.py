@@ -3,8 +3,8 @@ from cocotb.clock import Clock
 from cocotb.triggers import RisingEdge, FallingEdge, Timer, ClockCycles
 
 
-segmentsforward = [ 63, 6, 91, 79, 102, 109, 124, 7, 127, 103 ]
-segmentsbackward = [ 63, 103, 127, 7, 124, 109, 102, 79, 91, 6 ]
+segmentsforward = [ 63, 6, 91, 79, 102, 109, 125, 7, 127, 111 ]
+segmentsbackward = [ 63, 111, 127, 7, 125, 109, 102, 79, 91, 6 ]
 
 @cocotb.test()
 async def rotary_encoder(dut):
