@@ -10,6 +10,8 @@ module tb (
     // testbench is controlled by test.py
     input clk,
     input rst,
+    input A,
+    input B,
     output [6:0] segments
    );
 
@@ -21,12 +23,12 @@ module tb (
     end
 
     // wire up the inputs and outputs
-    wire [7:0] inputs = {6'b0, rst, clk};
+    wire [7:0] inputs = {4'b0, B, A, rst, clk};
     wire [7:0] outputs;
     assign segments = outputs[6:0];
 
     // instantiate the DUT
-    seven_segment_seconds #(.MAX_COUNT(100)) seven_segment_seconds(
+    rotary_encoder rotary_encoder(
         .io_in  (inputs),
         .io_out (outputs)
         );
